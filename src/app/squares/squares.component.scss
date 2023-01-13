@@ -1,0 +1,12 @@
+.square {
+    min-height: 150px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.487);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    cursor: pointer;
+
+}
