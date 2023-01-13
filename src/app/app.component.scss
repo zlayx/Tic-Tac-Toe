@@ -15,3 +15,12 @@
     overflow: hidden;
     position: relative;
 }
+
+.grid-tile {
+    background-color: rgb(127, 127, 127);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow:rgba(0, 0, 0, 0.188);
+
+    margin-bottom: 10px;
+}
