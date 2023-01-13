@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'GameProject';
-  xIsNext: boolean = true;
-  winner: string ="";
-  
 }
