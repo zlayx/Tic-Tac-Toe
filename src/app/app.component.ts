@@ -12,8 +12,12 @@ import { Title } from '@angular/platform-browser';
 export class AppComponent {
   btnVal = "";
   xIsNext = true;
+  get player() {
+    return this.xIsNext ? "X" : "O";
+  }
 
   makeMove() {
-    this.btnVal = "X"
+    this.btnVal = this.player;
+    this.xIsNext = !this.xIsNext;
   }
 }
