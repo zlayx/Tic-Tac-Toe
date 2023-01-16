@@ -16,8 +16,4 @@ export class AppComponent {
   makeMove() {
     this.btnVal = "X"
   }
-
-  get player() {
-    return this.xIsNext ? "X" : "O";
-  }
 }
