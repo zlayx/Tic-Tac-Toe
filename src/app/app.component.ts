@@ -16,8 +16,17 @@ export class AppComponent {
     return this.xIsNext ? "X" : "O";
   }
 
+  OnInit() {
+    this.newGame();
+  }
+
   makeMove() {
     this.btnVal = this.player;
     this.xIsNext = !this.xIsNext;
+  }
+
+  newGame() {
+    this.xIsNext = true;
+    this.btnVal = "";
   }
 }
