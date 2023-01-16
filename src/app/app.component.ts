@@ -10,7 +10,15 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class AppComponent {
-  btnVal = "";
+  btnVal1 = "";
+  btnVal2 = "";
+  btnVal3 = "";
+  btnVal4 = "";
+  btnVal5 = "";
+  btnVal6 = "";
+  btnVal7 = "";
+  btnVal8 = "";
+  btnVal9 = "";
   xIsNext = true;
   get player() {
     return this.xIsNext ? "X" : "O";
@@ -20,13 +28,53 @@ export class AppComponent {
     this.newGame();
   }
 
-  makeMove() {
-    this.btnVal = this.player;
+  makeMove1() {
+    this.btnVal1 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove2() {
+    this.btnVal2 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove3() {
+    this.btnVal3 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove4() {
+    this.btnVal4 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove5() {
+    this.btnVal5 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove6() {
+    this.btnVal6 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove7() {
+    this.btnVal7 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove8() {
+    this.btnVal8 = this.player;
+    this.xIsNext = !this.xIsNext;
+  }
+  makeMove9() {
+    this.btnVal9 = this.player;
     this.xIsNext = !this.xIsNext;
   }
 
   newGame() {
     this.xIsNext = true;
-    this.btnVal = "";
+    this.btnVal1 = "";
+    this.btnVal2 = "";
+    this.btnVal3 = "";
+    this.btnVal4 = "";
+    this.btnVal5 = "";
+    this.btnVal6 = "";
+    this.btnVal7 = "";
+    this.btnVal8 = "";
+    this.btnVal9 = "";
   }
 }
