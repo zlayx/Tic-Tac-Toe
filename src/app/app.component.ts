@@ -19,6 +19,7 @@ export class AppComponent {
   btnVal7 = "";
   btnVal8 = "";
   btnVal9 = "";
+
   xIsNext = true;
   get player() {
     return this.xIsNext ? "X" : "O";
@@ -29,6 +30,8 @@ export class AppComponent {
   }
 
   makeMove1() {
+    if (this.btnVal1="X") {return };
+    if (this.btnVal1="O") {return };
     this.btnVal1 = this.player;
     this.xIsNext = !this.xIsNext;
   }
