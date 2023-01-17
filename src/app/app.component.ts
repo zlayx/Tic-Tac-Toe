@@ -75,7 +75,7 @@ export class AppComponent {
     if (this.btnVal3.includes("X") && this.btnVal6.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
 
     if (this.btnVal1.includes("X") && this.btnVal5.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
-    if (this.btnVal3.includes("X") && this.btnVal2.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
+    if (this.btnVal3.includes("X") && this.btnVal5.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
 
       /* ---------------------------------------- O ---------------------------------------------- */
     if (this.btnVal1.includes("O") && this.btnVal2.includes("O") && this.btnVal3.includes("O")) {this.winner = "O"};
@@ -87,7 +87,7 @@ export class AppComponent {
     if (this.btnVal3.includes("O") && this.btnVal6.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
 
     if (this.btnVal1.includes("O") && this.btnVal5.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
-    if (this.btnVal3.includes("O") && this.btnVal2.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
+    if (this.btnVal3.includes("O") && this.btnVal5.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
   }
   
 
