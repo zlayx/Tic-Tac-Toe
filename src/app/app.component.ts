@@ -10,6 +10,7 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class AppComponent {
+  /* ------------- LOCAL --------------- */
   btnVal1 = "";
   btnVal2 = "";
   btnVal3 = "";
@@ -20,13 +21,29 @@ export class AppComponent {
   btnVal8 = "";
   btnVal9 = "";
 
+  bkgcolor = "250, 249, 249";
+  TileColor = "";
+
   xIsNext = true;
+
   get player() {
     return this.xIsNext ? "X" : "O";
   }
 
+  get plrcolor() {
+    return this.xIsNext ? "red" : "blue";
+  }
+/* ------------- FUNCTIONS --------------- */
+
   OnInit() {
     this.newGame();
+  }
+
+  onMouseEnter() {
+    this.TileColor = this.plrcolor;
+  }
+  onMouseOut() {
+    this.TileColor = this.bkgcolor;
   }
 
   makeMove1() {
