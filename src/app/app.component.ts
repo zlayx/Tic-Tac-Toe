@@ -30,42 +30,58 @@ export class AppComponent {
   }
 
   makeMove1() {
-    if (this.btnVal1="X") {return };
-    if (this.btnVal1="O") {return };
-    this.btnVal1 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal1) {
+      this.btnVal1 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove2() {
-    this.btnVal2 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal2) {
+      this.btnVal2 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove3() {
-    this.btnVal3 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal3) {
+      this.btnVal3 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove4() {
-    this.btnVal4 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal4) {
+      this.btnVal4 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove5() {
-    this.btnVal5 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal5) {
+      this.btnVal5 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove6() {
-    this.btnVal6 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal6) {
+      this.btnVal6 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove7() {
-    this.btnVal7 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal7) {
+      this.btnVal7 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove8() {
-    this.btnVal8 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal8) {
+      this.btnVal8 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
   makeMove9() {
-    this.btnVal9 = this.player;
-    this.xIsNext = !this.xIsNext;
+    if (!this.btnVal9) {
+      this.btnVal9 = this.player;
+      this.xIsNext = !this.xIsNext;
+    };
   }
 
   newGame() {
