@@ -1,24 +1,28 @@
 <app-header></app-header>
 
-<div class=" position">
+<div class="position2">
     <p class="turnDisplay">{{ player }}`s Turn</p>
+</div>
+
+<div class="position2">
+    <p *ngIf="winner">{{ winner }} has won the game! Congrats!</p>
 </div>
 
 <div class="position">
     <div class="board">
         <mat-grid-list class="grid-list" cols="3" rowHeight="30%" gutterSize="15px">
 
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove1()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal1 }}</mat-grid-tile>    </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove2()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal2 }}</mat-grid-tile>      </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove3()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal3 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove1()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal1 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove2()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal2 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove3()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal3 }}</mat-grid-tile>      </button>
 
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove4()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal4 }}</mat-grid-tile>      </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove5()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal5 }}</mat-grid-tile>      </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove6()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal6 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove4()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal4 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove5()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal5 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove6()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal6 }}</mat-grid-tile>      </button>
 
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove7()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal7 }}</mat-grid-tile>      </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove8()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal8 }}</mat-grid-tile>      </button>
-            <button class="tile-button">    <mat-grid-tile (click)="makeMove9()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal9 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove7()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal7 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove8()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal8 }}</mat-grid-tile>      </button>
+            <button class="tile-button">    <mat-grid-tile (click)="checkForWin()" (click)="makeMove9()" (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()" class="grid-tile">{{ btnVal9 }}</mat-grid-tile>      </button>
 
         </mat-grid-list>
     </div>

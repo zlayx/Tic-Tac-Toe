@@ -21,6 +21,8 @@ export class AppComponent {
   btnVal8 = "";
   btnVal9 = "";
 
+  winner = "";
+
   bkgcolor = "250, 249, 249";
   TileColor = "";
 
@@ -44,6 +46,31 @@ export class AppComponent {
   }
   onMouseOut() {
     this.TileColor = this.bkgcolor;
+  }
+
+  /*  1 2 3
+  	  4 5 6
+      7 8 9 */
+  checkForWin() {
+    /* ---------------------------------------- X ---------------------------------------------- */
+    if (this.btnVal1="X") {if (this.btnVal2="X") {if (this.btnVal3="X") {this.winner="X"}}}; /* row 1 */
+    if (this.btnVal4="X") {if (this.btnVal5="X") {if (this.btnVal6="X") {this.winner="X"}}}; /* row 2 */
+    if (this.btnVal7="X") {if (this.btnVal8="X") {if (this.btnVal9="X") {this.winner="X"}}}; /* row 1 */
+    if (this.btnVal1="X") {if (this.btnVal4="X") {if (this.btnVal7="X") {this.winner="X"}}}; /* col 1 */
+    if (this.btnVal2="X") {if (this.btnVal5="X") {if (this.btnVal8="X") {this.winner="X"}}}; /* col 2 */
+    if (this.btnVal3="X") {if (this.btnVal6="X") {if (this.btnVal9="X") {this.winner="X"}}}; /* col 3 */
+    if (this.btnVal1="X") {if (this.btnVal5="X") {if (this.btnVal9="X") {this.winner="X"}}}; /* dia l */
+    if (this.btnVal3="X") {if (this.btnVal5="X") {if (this.btnVal7="X") {this.winner="X"}}}; /* dia r */
+
+    /* ---------------------------------------- O ---------------------------------------------- */
+    if (this.btnVal1="O") {if (this.btnVal2="O") {if (this.btnVal3="O") {this.winner="O"}}}; /* row 1 */
+    if (this.btnVal4="O") {if (this.btnVal5="O") {if (this.btnVal6="O") {this.winner="O"}}}; /* row 2 */
+    if (this.btnVal7="O") {if (this.btnVal8="O") {if (this.btnVal9="O") {this.winner="O"}}}; /* row 1 */
+    if (this.btnVal1="O") {if (this.btnVal4="O") {if (this.btnVal7="O") {this.winner="O"}}}; /* col 1 */
+    if (this.btnVal2="O") {if (this.btnVal5="O") {if (this.btnVal8="O") {this.winner="O"}}}; /* col 2 */
+    if (this.btnVal3="O") {if (this.btnVal6="O") {if (this.btnVal9="O") {this.winner="O"}}}; /* col 3 */
+    if (this.btnVal1="O") {if (this.btnVal5="O") {if (this.btnVal9="O") {this.winner="O"}}}; /* dia l */
+    if (this.btnVal3="O") {if (this.btnVal5="O") {if (this.btnVal7="O") {this.winner="O"}}}; /* dia r */
   }
 
   makeMove1() {
@@ -112,5 +139,6 @@ export class AppComponent {
     this.btnVal7 = "";
     this.btnVal8 = "";
     this.btnVal9 = "";
+    this.winner = "";
   }
 }
