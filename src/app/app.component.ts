@@ -79,55 +79,55 @@ export class AppComponent {
   
 
   makeMove1() {
-    if (!this.btnVal1) {
+    if (!this.btnVal1 && !this.winner) {
       this.btnVal1 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove2() {
-    if (!this.btnVal2) {
+    if (!this.btnVal2 && !this.winner) {
       this.btnVal2 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove3() {
-    if (!this.btnVal3) {
+    if (!this.btnVal3 && !this.winner) {
       this.btnVal3 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove4() {
-    if (!this.btnVal4) {
+    if (!this.btnVal4 && !this.winner) {
       this.btnVal4 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove5() {
-    if (!this.btnVal5) {
+    if (!this.btnVal5 && !this.winner) {
       this.btnVal5 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove6() {
-    if (!this.btnVal6) {
+    if (!this.btnVal6 && !this.winner) {
       this.btnVal6 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove7() {
-    if (!this.btnVal7) {
+    if (!this.btnVal7 && !this.winner) {
       this.btnVal7 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove8() {
-    if (!this.btnVal8) {
+    if (!this.btnVal8 && !this.winner) {
       this.btnVal8 = this.player;
       this.xIsNext = !this.xIsNext;
     };
   }
   makeMove9() {
-    if (!this.btnVal9) {
+    if (!this.btnVal9 && !this.winner) {
       this.btnVal9 = this.player;
       this.xIsNext = !this.xIsNext;
     };
