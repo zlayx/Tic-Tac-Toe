@@ -48,6 +48,20 @@ export class AppComponent {
     this.TileColor = this.bkgcolor;
   }
 
+  playAudio_click(){
+    let click = new Audio();
+    click.src = "/assets/sfx/button_click_01.mp3";
+    click.load();
+    click.play();
+  }
+  playAudio_error(){
+    let error = new Audio();
+    error.src = "/assets/sfx/error_01.mp3";
+    error.load();
+    error.play();
+  }
+
+
   /*  1 2 3
   	  4 5 6
       7 8 9 */
@@ -79,57 +93,84 @@ export class AppComponent {
   
 
   makeMove1() {
+    if (this.btnVal1) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal1 && !this.winner) {
       this.btnVal1 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove2() {
+    if (this.btnVal2) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal2 && !this.winner) {
       this.btnVal2 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove3() {
+    if (this.btnVal3) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal3 && !this.winner) {
       this.btnVal3 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove4() {
+    if (this.btnVal4) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal4 && !this.winner) {
       this.btnVal4 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove5() {
+    if (this.btnVal5) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal5 && !this.winner) {
       this.btnVal5 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove6() {
+    if (this.btnVal6) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal6 && !this.winner) {
       this.btnVal6 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove7() {
+    if (this.btnVal7) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal7 && !this.winner) {
       this.btnVal7 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove8() {
+    if (this.btnVal8) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal8 && !this.winner) {
       this.btnVal8 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
   makeMove9() {
+    if (this.btnVal9) {this.playAudio_error()};
+    if (this.winner) {this.playAudio_error()};
     if (!this.btnVal9 && !this.winner) {
       this.btnVal9 = this.player;
       this.xIsNext = !this.xIsNext;
+      this.playAudio_click();
     };
   }
 
