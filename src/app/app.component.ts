@@ -53,8 +53,30 @@ export class AppComponent {
       7 8 9 */
   checkForWin() {
     /* ---------------------------------------- X ---------------------------------------------- */
-    if (this.btnVal1.includes("X")) {if (this.btnVal2.includes("X")) {if (this.btnVal3.includes("X")) {this.winner="X"}}}; /* row 1 */
+    if (this.btnVal1.includes("X") && this.btnVal2.includes("X") && this.btnVal3.includes("X")) {this.winner = "X"};
+    if (this.btnVal4.includes("X") && this.btnVal5.includes("X") && this.btnVal6.includes("X")) {this.winner = "X"};
+    if (this.btnVal7.includes("X") && this.btnVal8.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
+
+    if (this.btnVal1.includes("X") && this.btnVal4.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
+    if (this.btnVal2.includes("X") && this.btnVal5.includes("X") && this.btnVal8.includes("X")) {this.winner = "X"};
+    if (this.btnVal3.includes("X") && this.btnVal6.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
+
+    if (this.btnVal1.includes("X") && this.btnVal5.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
+    if (this.btnVal3.includes("X") && this.btnVal2.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
+
+      /* ---------------------------------------- O ---------------------------------------------- */
+    if (this.btnVal1.includes("O") && this.btnVal2.includes("O") && this.btnVal3.includes("O")) {this.winner = "O"};
+    if (this.btnVal4.includes("O") && this.btnVal5.includes("O") && this.btnVal6.includes("O")) {this.winner = "O"};
+    if (this.btnVal7.includes("O") && this.btnVal8.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
+
+    if (this.btnVal1.includes("O") && this.btnVal4.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
+    if (this.btnVal2.includes("O") && this.btnVal5.includes("O") && this.btnVal8.includes("O")) {this.winner = "O"};
+    if (this.btnVal3.includes("O") && this.btnVal6.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
+
+    if (this.btnVal1.includes("O") && this.btnVal5.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
+    if (this.btnVal3.includes("O") && this.btnVal2.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
   }
+  
 
   makeMove1() {
     if (!this.btnVal1) {
