@@ -61,34 +61,40 @@ export class AppComponent {
     error.load();
     error.play();
   }
+  playAudio_win(){
+    let audio = new Audio();
+    audio.src = "/assets/sfx/win.mp3";
+    audio.load();
+    audio.play();
+  }
 
   /*  1 2 3
   	  4 5 6
       7 8 9 */
   checkForWin() {
     /* ---------------------------------------- X ---------------------------------------------- */
-    if (this.btnVal1.includes("X") && this.btnVal2.includes("X") && this.btnVal3.includes("X")) {this.winner = "X"};
-    if (this.btnVal4.includes("X") && this.btnVal5.includes("X") && this.btnVal6.includes("X")) {this.winner = "X"};
-    if (this.btnVal7.includes("X") && this.btnVal8.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
+    if (this.btnVal1.includes("X") && this.btnVal2.includes("X") && this.btnVal3.includes("X")) {this.winner = "X"; this.playAudio_win()};
+    if (this.btnVal4.includes("X") && this.btnVal5.includes("X") && this.btnVal6.includes("X")) {this.winner = "X"; this.playAudio_win()};
+    if (this.btnVal7.includes("X") && this.btnVal8.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"; this.playAudio_win()};
 
-    if (this.btnVal1.includes("X") && this.btnVal4.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
-    if (this.btnVal2.includes("X") && this.btnVal5.includes("X") && this.btnVal8.includes("X")) {this.winner = "X"};
-    if (this.btnVal3.includes("X") && this.btnVal6.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
+    if (this.btnVal1.includes("X") && this.btnVal4.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"; this.playAudio_win()};
+    if (this.btnVal2.includes("X") && this.btnVal5.includes("X") && this.btnVal8.includes("X")) {this.winner = "X"; this.playAudio_win()};
+    if (this.btnVal3.includes("X") && this.btnVal6.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"; this.playAudio_win()};
 
-    if (this.btnVal1.includes("X") && this.btnVal5.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
-    if (this.btnVal3.includes("X") && this.btnVal5.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
+    if (this.btnVal1.includes("X") && this.btnVal5.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"; this.playAudio_win()};
+    if (this.btnVal3.includes("X") && this.btnVal5.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"; this.playAudio_win()};
 
     /* ---------------------------------------- O ---------------------------------------------- */
-    if (this.btnVal1.includes("O") && this.btnVal2.includes("O") && this.btnVal3.includes("O")) {this.winner = "O"};
-    if (this.btnVal4.includes("O") && this.btnVal5.includes("O") && this.btnVal6.includes("O")) {this.winner = "O"};
-    if (this.btnVal7.includes("O") && this.btnVal8.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
+    if (this.btnVal1.includes("O") && this.btnVal2.includes("O") && this.btnVal3.includes("O")) {this.winner = "O"; this.playAudio_win()};
+    if (this.btnVal4.includes("O") && this.btnVal5.includes("O") && this.btnVal6.includes("O")) {this.winner = "O"; this.playAudio_win()};
+    if (this.btnVal7.includes("O") && this.btnVal8.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"; this.playAudio_win()};
 
-    if (this.btnVal1.includes("O") && this.btnVal4.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
-    if (this.btnVal2.includes("O") && this.btnVal5.includes("O") && this.btnVal8.includes("O")) {this.winner = "O"};
-    if (this.btnVal3.includes("O") && this.btnVal6.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
+    if (this.btnVal1.includes("O") && this.btnVal4.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"; this.playAudio_win()};
+    if (this.btnVal2.includes("O") && this.btnVal5.includes("O") && this.btnVal8.includes("O")) {this.winner = "O"; this.playAudio_win()};
+    if (this.btnVal3.includes("O") && this.btnVal6.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"; this.playAudio_win()};
 
-    if (this.btnVal1.includes("O") && this.btnVal5.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
-    if (this.btnVal3.includes("O") && this.btnVal5.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
+    if (this.btnVal1.includes("O") && this.btnVal5.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"; this.playAudio_win()};
+    if (this.btnVal3.includes("O") && this.btnVal5.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"; this.playAudio_win()};
 
     /* --------------------------------------- tie --------------------------------------------- */
     if (this.btnVal1 && this.btnVal2 && this.btnVal3 && this.btnVal4 && this.btnVal5 && this.btnVal6 && this.btnVal7 && this.btnVal8 && this.btnVal9 && !this.winner) {
