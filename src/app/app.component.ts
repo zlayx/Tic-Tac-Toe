@@ -67,6 +67,12 @@ export class AppComponent {
     audio.load();
     audio.play();
   }
+  playAudio_tie(){
+    let audio = new Audio();
+    audio.src = "/assets/sfx/tie.mp3";
+    audio.load();
+    audio.play();
+  }
 
   /*  1 2 3
   	  4 5 6
@@ -99,6 +105,7 @@ export class AppComponent {
     /* --------------------------------------- tie --------------------------------------------- */
     if (this.btnVal1 && this.btnVal2 && this.btnVal3 && this.btnVal4 && this.btnVal5 && this.btnVal6 && this.btnVal7 && this.btnVal8 && this.btnVal9 && !this.winner) {
       this.noWinner = true;
+      this.playAudio_tie();
     };
   }
   
