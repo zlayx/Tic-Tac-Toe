@@ -22,6 +22,7 @@ export class AppComponent {
   btnVal9 = "";
 
   winner = "";
+  noWinner = false;
 
   bkgcolor = "250, 249, 249";
   TileColor = "";
@@ -77,7 +78,7 @@ export class AppComponent {
     if (this.btnVal1.includes("X") && this.btnVal5.includes("X") && this.btnVal9.includes("X")) {this.winner = "X"};
     if (this.btnVal3.includes("X") && this.btnVal5.includes("X") && this.btnVal7.includes("X")) {this.winner = "X"};
 
-      /* ---------------------------------------- O ---------------------------------------------- */
+    /* ---------------------------------------- O ---------------------------------------------- */
     if (this.btnVal1.includes("O") && this.btnVal2.includes("O") && this.btnVal3.includes("O")) {this.winner = "O"};
     if (this.btnVal4.includes("O") && this.btnVal5.includes("O") && this.btnVal6.includes("O")) {this.winner = "O"};
     if (this.btnVal7.includes("O") && this.btnVal8.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
@@ -88,6 +89,11 @@ export class AppComponent {
 
     if (this.btnVal1.includes("O") && this.btnVal5.includes("O") && this.btnVal9.includes("O")) {this.winner = "O"};
     if (this.btnVal3.includes("O") && this.btnVal5.includes("O") && this.btnVal7.includes("O")) {this.winner = "O"};
+
+    /* --------------------------------------- tie --------------------------------------------- */
+    if (this.btnVal1 && this.btnVal2 && this.btnVal3 && this.btnVal4 && this.btnVal5 && this.btnVal6 && this.btnVal7 && this.btnVal8 && this.btnVal9 && !this.winner) {
+      this.noWinner = true;
+    };
   }
   
 
@@ -185,5 +191,6 @@ export class AppComponent {
     this.btnVal8 = "";
     this.btnVal9 = "";
     this.winner = "";
+    this.noWinner = false;
   }
 }
